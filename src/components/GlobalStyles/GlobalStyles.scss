@@ -7,9 +7,24 @@
 :root {
     --header-height: 60px;
     --width-basic: 1150px;
+    --text-color: #333;
+    --black: #000;
+    --primary-color: #fe2c55;
 }
 html {
     font-size: 62.5%;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 body {
@@ -17,4 +32,5 @@ body {
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
     text-rendering: optimizeSpeed;
+    color: var(--text-color);
 }
