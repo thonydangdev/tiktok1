@@ -5,7 +5,7 @@
     --top-spacer: 9px;
     width: 100%;
     height: var(--header-height);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
 }
@@ -16,8 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.logo {
 }
 
 .search {
@@ -96,6 +94,20 @@
         background-color: rgba(22, 24, 35, 0.06);
     }
 }
+.search-result {
+    width: 361px;
+}
+.search-title {
+    font-size: 14px;
+    padding: 5px 12px;
+    height: 30px;
+    color: rgba(22, 24, 35, 0.5);
+    line-height: 20px;
+    font-size: 14px;
+}
 
 .actions {
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
 }

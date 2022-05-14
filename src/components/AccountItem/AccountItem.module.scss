@@ -1,0 +1,42 @@
+.wrapper {
+    padding: 9px 16px;
+    cursor: pointer;
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    -webkit-box-align: center;
+    &:hover {
+        background: rgba(22, 24, 35, 0.03);
+    }
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100rem;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+    flex: 1;
+}
+.name {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    & span {
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+    & .iconcheck {
+        color: rgb(32, 213, 236);
+        font-size: 1.2rem;
+    }
+}
+.username {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
