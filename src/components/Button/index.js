@@ -17,6 +17,7 @@ function Button({
     gray = false,
     leftIcon = false,
     rightIcon = false,
+    className,
     onClick,
     children,
     ...passProps
@@ -34,12 +35,15 @@ function Button({
         Comp = 'a';
     }
     //Remove event when disabled
-    Object.keys(props).forEach((key) => {
-        if (key.startsWith('on') && typeof props[key] === 'function') {
-            delete props[key];
-        }
-    });
+    if (disabled) {
+        Object.keys(props).forEach((key) => {
+            if (key.startsWith('on') && typeof props[key] === 'function') {
+                delete props[key];
+            }
+        });
+    }
     const classes = cx('wrapper', {
+        [className]: className,
         primary,
         rounded,
         outline,
