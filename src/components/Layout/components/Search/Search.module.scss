@@ -52,10 +52,10 @@
     font-size: 1.8rem;
     padding: 0 10px;
     color: rgba(22, 24, 35, 0.4);
-    display: none;
 }
 .loading {
     font-size: 1.6rem;
+    animation: spinner 0.8s infinite ease-in;
 }
 
 .search-btn {
@@ -84,4 +84,12 @@
     color: rgba(22, 24, 35, 0.5);
     line-height: 20px;
     font-size: 14px;
+}
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
 }
